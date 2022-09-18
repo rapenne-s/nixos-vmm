@@ -21,9 +21,9 @@ VMM:
 
 let
   ...
-  openbsdVMM = builtins.fetchGit {
-    url = "https://github.com/qbit/nixos-vmm.git";
-    ref = "refs/tags/v1.0.0";
+  openbsdVMM = builtins.fetchTarball{
+    url = "https://github.com/qbit/nixos-vmm/archive/refs/tags/v1.0.0.tar.gz";
+    sha256 = "sha256:0wr6z727hinqddnbg8az28ivmsc178s35wmziiwbwcg8h9syjyxb";
   };
   ...
 
